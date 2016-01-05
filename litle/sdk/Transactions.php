@@ -38,9 +38,9 @@ class Transactions {
 				'fraudFilterOverride' => XmlFields::returnArrayValue ( $hash_in, 'fraudFilterOverride' ),
 				'recurringRequest' => XmlFields::recurringRequestType ( XmlFields::returnArrayValue ( $hash_in, 'recurringRequest' ) ),
 				'litleInternalRecurringRequest' => XmlFields::litleInternalRecurringRequestType ( XmlFields::returnArrayValue ( $hash_in, 'litleInternalRecurringRequest' ) ),
-				'debtRepayment' => XmlFields::returnArrayValue ( $hash_in, 'debtRepayment' ) 
+				'debtRepayment' => XmlFields::returnArrayValue ( $hash_in, 'debtRepayment' )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createAuthHash($hash_in) {
@@ -73,9 +73,9 @@ class Transactions {
 				'recyclingRequest' => (XmlFields::recyclingRequestType ( XmlFields::returnArrayValue ( $hash_in, 'recyclingRequest' ) )),
 				'fraudFilterOverride' => XmlFields::returnArrayValue ( $hash_in, 'fraudFilterOverride' ),
 				'recurringRequest' => XmlFields::recurringRequestType ( XmlFields::returnArrayValue ( $hash_in, 'recurringRequest' ) ),
-				'debtRepayment' => XmlFields::returnArrayValue ( $hash_in, 'debtRepayment' ) 
+				'debtRepayment' => XmlFields::returnArrayValue ( $hash_in, 'debtRepayment' )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createAuthReversalHash($hash_in) {
@@ -84,9 +84,9 @@ class Transactions {
 				'amount' => XmlFields::returnArrayValue ( $hash_in, 'amount' ),
 				'surchargeAmount' => XmlFields::returnArrayValue ( $hash_in, 'surchargeAmount' ),
 				'payPalNotes' => XmlFields::returnArrayValue ( $hash_in, 'payPalNotes' ),
-				'actionReason' => XmlFields::returnArrayValue ( $hash_in, 'actionReason' ) 
+				'actionReason' => XmlFields::returnArrayValue ( $hash_in, 'actionReason' )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createCreditHash($hash_in) {
@@ -110,9 +110,9 @@ class Transactions {
 				'pos' => XmlFields::pos ( XMLFields::returnArrayValue ( $hash_in, 'pos' ) ),
 				'amexAggregatorData' => XmlFields::amexAggregatorData ( XMLFields::returnArrayValue ( $hash_in, 'amexAggregatorData' ) ),
 				'payPalNotes' => XmlFields::returnArrayValue ( $hash_in, 'payPalNotes' ),
-				'actionReason' => XmlFields::returnArrayValue ( $hash_in, 'actionReason' ) 
+				'actionReason' => XmlFields::returnArrayValue ( $hash_in, 'actionReason' )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createRegisterTokenHash($hash_in) {
@@ -122,9 +122,9 @@ class Transactions {
 				'echeckForToken' => XmlFields::echeckForTokenType ( XmlFields::returnArrayValue ( $hash_in, 'echeckForToken' ) ),
 				'paypageRegistrationId' => XmlFields::returnArrayValue ( $hash_in, 'paypageRegistrationId' ),
 				'applepay' => (XmlFields::applepayType ( XmlFields::returnArrayValue ( $hash_in, 'applepay' ) )),
-				'cardValidationNum' => XmlFields::returnArrayValue ( $hash_in, 'cardValidationNum' ) 
+				'cardValidationNum' => XmlFields::returnArrayValue ( $hash_in, 'cardValidationNum' )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createForceCaptureHash($hash_in) {
@@ -145,9 +145,9 @@ class Transactions {
 				'pos' => XmlFields::pos ( XmlFields::returnArrayValue ( $hash_in, 'pos' ) ),
 				'amexAggregatorData' => XmlFields::amexAggregatorData ( XmlFields::returnArrayValue ( $hash_in, 'amexAggregatorData' ) ),
 				'merchantData' => (XmlFields::merchantData ( XmlFields::returnArrayValue ( $hash_in, 'merchantData' ) )),
-				'debtRepayment' => XmlFields::returnArrayValue ( $hash_in, 'debtRepayment' ) 
+				'debtRepayment' => XmlFields::returnArrayValue ( $hash_in, 'debtRepayment' )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createCaptureHash($hash_in) {
@@ -159,9 +159,9 @@ class Transactions {
 				'enhancedData' => XmlFields::enhancedData ( XmlFields::returnArrayValue ( $hash_in, 'enhancedData' ) ),
 				'processingInstructions' => XmlFields::processingInstructions ( XmlFields::returnArrayValue ( $hash_in, 'processingInstructions' ) ),
 				'payPalOrderComplete' => XmlFields::returnArrayValue ( $hash_in, 'payPalOrderComplete' ),
-				'payPalNotes' => XmlFields::returnArrayValue ( $hash_in, 'payPalNotes' ) 
+				'payPalNotes' => XmlFields::returnArrayValue ( $hash_in, 'payPalNotes' )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createCaptureGivenAuthHash($hash_in) {
@@ -185,9 +185,9 @@ class Transactions {
 				'pos' => XmlFields::pos ( XmlFields::returnArrayValue ( $hash_in, 'pos' ) ),
 				'amexAggregatorData' => XmlFields::amexAggregatorData ( XmlFields::returnArrayValue ( $hash_in, 'amexAggregatorData' ) ),
 				'merchantData' => (XmlFields::merchantData ( XmlFields::returnArrayValue ( $hash_in, 'merchantData' ) )),
-				'debtRepayment' => XmlFields::returnArrayValue ( $hash_in, 'debtRepayment' ) 
+				'debtRepayment' => XmlFields::returnArrayValue ( $hash_in, 'debtRepayment' )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createEcheckRedepositHash($hash_in) {
@@ -195,9 +195,9 @@ class Transactions {
 				'litleTxnId' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'litleTxnId' ) ),
 				'echeck' => XmlFields::echeckType ( XmlFields::returnArrayValue ( $hash_in, 'echeck' ) ),
 				'echeckToken' => XmlFields::echeckTokenType ( XmlFields::returnArrayValue ( $hash_in, 'echeckToken' ) ),
-				'merchantData' => (XmlFields::merchantData ( XmlFields::returnArrayValue ( $hash_in, 'merchantData' ) )) 
+				'merchantData' => (XmlFields::merchantData ( XmlFields::returnArrayValue ( $hash_in, 'merchantData' ) ))
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createEcheckSaleHash($hash_in) {
@@ -212,9 +212,9 @@ class Transactions {
 				'shipToAddress' => XmlFields::contact ( XmlFields::returnArrayValue ( $hash_in, 'shipToAddress' ) ),
 				'echeck' => XmlFields::echeckType ( XmlFields::returnArrayValue ( $hash_in, 'echeck' ) ),
 				'echeckToken' => XmlFields::echeckTokenType ( XmlFields::returnArrayValue ( $hash_in, 'echeckToken' ) ),
-				'customBilling' => XmlFields::customBilling ( XmlFields::returnArrayValue ( $hash_in, 'customBilling' ) ) 
+				'customBilling' => XmlFields::customBilling ( XmlFields::returnArrayValue ( $hash_in, 'customBilling' ) )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createEcheckCreditHash($hash_in) {
@@ -227,30 +227,30 @@ class Transactions {
 				'billToAddress' => XmlFields::contact ( XmlFields::returnArrayValue ( $hash_in, 'billToAddress' ) ),
 				'echeck' => XmlFields::echeckType ( XmlFields::returnArrayValue ( $hash_in, 'echeck' ) ),
 				'echeckToken' => XmlFields::echeckTokenType ( XmlFields::returnArrayValue ( $hash_in, 'echeckToken' ) ),
-				'customBilling' => XmlFields::customBilling ( XmlFields::returnArrayValue ( $hash_in, 'customBilling' ) ) 
+				'customBilling' => XmlFields::customBilling ( XmlFields::returnArrayValue ( $hash_in, 'customBilling' ) )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createEcheckPreNoteSaleHash($hash_in) {
 		$hash_out = array (
-				
+
 				'orderId' => XmlFields::returnArrayValue ( $hash_in, 'orderId' ),
 				'orderSource' => XmlFields::returnArrayValue ( $hash_in, 'orderSource' ),
 				'billToAddress' => XmlFields::contact ( XmlFields::returnArrayValue ( $hash_in, 'billToAddress' ) ),
 				'echeck' => XmlFields::echeckType ( XmlFields::returnArrayValue ( $hash_in, 'echeck' ) ),
-				'merchantData' => XmlFields::merchantData ( XmlFields::returnArrayValue ( $hash_in, 'merchantData' ) ) 
+				'merchantData' => XmlFields::merchantData ( XmlFields::returnArrayValue ( $hash_in, 'merchantData' ) )
 		);
 		return $hash_out;
 	}
 	public static function createEcheckPreNoteCreditHash($hash_in) {
 		$hash_out = array (
-				
+
 				'orderId' => XmlFields::returnArrayValue ( $hash_in, 'orderId' ),
 				'orderSource' => XmlFields::returnArrayValue ( $hash_in, 'orderSource' ),
 				'billToAddress' => XmlFields::contact ( XmlFields::returnArrayValue ( $hash_in, 'billToAddress' ) ),
 				'echeck' => XmlFields::echeckType ( XmlFields::returnArrayValue ( $hash_in, 'echeck' ) ),
-				'merchantData' => XmlFields::merchantData ( XmlFields::returnArrayValue ( $hash_in, 'merchantData' ) ) 
+				'merchantData' => XmlFields::merchantData ( XmlFields::returnArrayValue ( $hash_in, 'merchantData' ) )
 		);
 		return $hash_out;
 	}
@@ -260,7 +260,7 @@ class Transactions {
 				'submerchantName' => XmlFields::returnArrayValue ( $hash_in, 'submerchantName' ),
 				'fundsTransferId' => XmlFields::returnArrayValue (  $hash_in, 'fundsTransferId'  ),
 				'amount' =>  XmlFields::returnArrayValue ( $hash_in, 'amount' ) ,
-				'accountInfo' => XmlFields::echeckType ( XmlFields::returnArrayValue ( $hash_in, 'accountInfo' ) ) 
+				'accountInfo' => XmlFields::echeckType ( XmlFields::returnArrayValue ( $hash_in, 'accountInfo' ) )
 		);
 		return $hash_out;
 	}
@@ -268,33 +268,33 @@ class Transactions {
 		$hash_out = array (
 				'fundingSubmerchantId' => XmlFields::returnArrayValue ( $hash_in, 'fundingSubmerchantId' ),
 				'vendorName' => XmlFields::returnArrayValue ( $hash_in, 'vendorName' ),
-				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'amount' ),
+				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'fundsTransferId' ),
 				'amount' => XmlFields::returnArrayValue ( $hash_in, 'amount' ) ,
-				'accountInfo' => XmlFields::echeckType ( XmlFields::returnArrayValue ( $hash_in, 'accountInfo' ) ) 
+				'accountInfo' => XmlFields::echeckType ( XmlFields::returnArrayValue ( $hash_in, 'accountInfo' ) )
 		);
 		return $hash_out;
 	}
 	public static function createPayFacCreditHash($hash_in) {
 		$hash_out = array (
 				'fundingSubmerchantId' => XmlFields::returnArrayValue ( $hash_in, 'fundingSubmerchantId' ),
-				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'amount' ),
-				'amount' => XmlFields::returnArrayValue ( $hash_in, 'amount' )  
+				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'fundsTransferId' ),
+				'amount' => XmlFields::returnArrayValue ( $hash_in, 'amount' )
 		);
 		return $hash_out;
 	}
 	public static function createReserveCreditHash($hash_in) {
 		$hash_out = array (
 				'fundingSubmerchantId' => XmlFields::returnArrayValue ( $hash_in, 'fundingSubmerchantId' ),
-				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'amount' ),
-				'amount' => XmlFields::returnArrayValue ( $hash_in, 'amount' )  
+				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'fundsTransferId' ),
+				'amount' => XmlFields::returnArrayValue ( $hash_in, 'amount' )
 		);
 		return $hash_out;
 	}
 	public static function createPhysicalCheckCreditHash($hash_in) {
 		$hash_out = array (
 				'fundingSubmerchantId' => XmlFields::returnArrayValue ( $hash_in, 'fundingSubmerchantId' ),
-				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'amount' ),
-				'amount' => XmlFields::returnArrayValue ( $hash_in, 'amount' )  
+				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'fundsTransferId' ),
+				'amount' => XmlFields::returnArrayValue ( $hash_in, 'amount' )
 		);
 		return $hash_out;
 	}
@@ -302,7 +302,7 @@ class Transactions {
 		$hash_out = array (
 				'fundingSubmerchantId' => XmlFields::returnArrayValue ( $hash_in, 'fundingSubmerchantId' ),
 				'submerchantName' => XmlFields::returnArrayValue ( $hash_in, 'submerchantName' ),
-				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'amount' ),
+				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'fundsTransferId' ),
 				'amount' => XmlFields::returnArrayValue ( $hash_in, 'amount' ) ,
 				'accountInfo' => XmlFields::echeckType ( XmlFields::returnArrayValue ( $hash_in, 'accountInfo' ) )
 		);
@@ -312,7 +312,7 @@ class Transactions {
 		$hash_out = array (
 				'fundingSubmerchantId' => XmlFields::returnArrayValue ( $hash_in, 'fundingSubmerchantId' ),
 				'vendorName' => XmlFields::returnArrayValue ( $hash_in, 'vendorName' ),
-				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'amount' ),
+				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'fundsTransferId' ),
 				'amount' => XmlFields::returnArrayValue ( $hash_in, 'amount' ) ,
 				'accountInfo' => XmlFields::echeckType ( XmlFields::returnArrayValue ( $hash_in, 'accountInfo' ) )
 		);
@@ -321,24 +321,24 @@ class Transactions {
 	public static function createPayFacDebitHash($hash_in) {
 		$hash_out = array (
 				'fundingSubmerchantId' => XmlFields::returnArrayValue ( $hash_in, 'fundingSubmerchantId' ),
-				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'amount' ),
-				'amount' => XmlFields::returnArrayValue ( $hash_in, 'amount' ) 
+				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'fundsTransferId' ),
+				'amount' => XmlFields::returnArrayValue ( $hash_in, 'amount' )
 		);
 		return $hash_out;
 	}
 	public static function createReserveDebitHash($hash_in) {
 		$hash_out = array (
 				'fundingSubmerchantId' => XmlFields::returnArrayValue ( $hash_in, 'fundingSubmerchantId' ),
-				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'amount' ),
-				'amount' => XmlFields::returnArrayValue ( $hash_in, 'amount' ) 
+				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'fundsTransferId' ),
+				'amount' => XmlFields::returnArrayValue ( $hash_in, 'amount' )
 		);
 		return $hash_out;
 	}
 	public static function createPhysicalCheckDebitHash($hash_in) {
 		$hash_out = array (
 				'fundingSubmerchantId' => XmlFields::returnArrayValue ( $hash_in, 'fundingSubmerchantId' ),
-				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'amount' ),
-				'amount' => XmlFields::returnArrayValue ( $hash_in, 'amount' ) 
+				'fundsTransferId' => XmlFields::returnArrayValue ( $hash_in, 'fundsTransferId' ),
+				'amount' => XmlFields::returnArrayValue ( $hash_in, 'amount' )
 		);
 		return $hash_out;
 	}
@@ -351,18 +351,18 @@ class Transactions {
 				'billToAddress' => XmlFields::contact ( XmlFields::returnArrayValue ( $hash_in, 'billToAddress' ) ),
 				'echeck' => XmlFields::echeckType ( XmlFields::returnArrayValue ( $hash_in, 'echeck' ) ),
 				'echeckToken' => XmlFields::echeckTokenType ( XmlFields::returnArrayValue ( $hash_in, 'echeckToken' ) ),
-				'merchantData' => (XmlFields::merchantData ( XmlFields::returnArrayValue ( $hash_in, 'merchantData' ) )) 
+				'merchantData' => (XmlFields::merchantData ( XmlFields::returnArrayValue ( $hash_in, 'merchantData' ) ))
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createUpdateCardValidationNumOnTokenHash($hash_in) {
 		$hash_out = array (
 				'orderId' => XmlFields::returnArrayValue ( $hash_in, 'orderId' ),
 				'litleToken' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'litleToken' ) ),
-				'cardValidationNum' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'cardValidationNum' ) ) 
+				'cardValidationNum' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'cardValidationNum' ) )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createUpdateSubscriptionHash($hash_in) {
@@ -373,16 +373,16 @@ class Transactions {
 				'card' => XmlFields::cardType ( XmlFields::returnArrayValue ( $hash_in, 'card' ) ),
 				'token' => XmlFields::cardTokenType ( XmlFields::returnArrayValue ( $hash_in, 'token' ) ),
 				'paypage' => XmlFields::cardPaypageType ( XmlFields::returnArrayValue ( $hash_in, 'paypage' ) ),
-				'billingDate' => XmlFields::returnArrayValue ( $hash_in, 'billingDate' ) 
+				'billingDate' => XmlFields::returnArrayValue ( $hash_in, 'billingDate' )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createCancelSubscriptionHash($hash_in) {
 		$hash_out = array (
-				'subscriptionId' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'subscriptionId' ) ) 
+				'subscriptionId' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'subscriptionId' ) )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createCreatePlanHash($hash_in) {
@@ -395,17 +395,17 @@ class Transactions {
 				'numberOfPayments' => XmlFields::returnArrayValue ( $hash_in, 'numberOfPayments' ),
 				'trialNumberOfIntervals' => XmlFields::returnArrayValue ( $hash_in, 'trialNumberOfIntervals' ),
 				'trialIntervalType' => XmlFields::returnArrayValue ( $hash_in, 'trialIntervalType' ),
-				'active' => XmlFields::returnArrayValue ( $hash_in, 'active' ) 
+				'active' => XmlFields::returnArrayValue ( $hash_in, 'active' )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createUpdatePlanHash($hash_in) {
 		$hash_out = array (
 				'planCode' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'planCode' ) ),
-				'active' => XmlFields::returnArrayValue ( $hash_in, 'active' ) 
+				'active' => XmlFields::returnArrayValue ( $hash_in, 'active' )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createActivateHash($hash_in) {
@@ -413,18 +413,18 @@ class Transactions {
 				'orderId' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'orderId' ) ),
 				'amount' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'amount' ) ),
 				'orderSource' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'orderSource' ) ),
-				'card' => Checker::requiredField ( XmlFields::cardType ( XmlFields::returnArrayValue ( $hash_in, 'card' ) ) ) 
+				'card' => Checker::requiredField ( XmlFields::cardType ( XmlFields::returnArrayValue ( $hash_in, 'card' ) ) )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createDeactivateHash($hash_in) {
 		$hash_out = array (
 				'orderId' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'orderId' ) ),
 				'orderSource' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'orderSource' ) ),
-				'card' => Checker::requiredField ( XmlFields::cardType ( XmlFields::returnArrayValue ( $hash_in, 'card' ) ) ) 
+				'card' => Checker::requiredField ( XmlFields::cardType ( XmlFields::returnArrayValue ( $hash_in, 'card' ) ) )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createLoadHash($hash_in) {
@@ -432,9 +432,9 @@ class Transactions {
 				'orderId' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'orderId' ) ),
 				'amount' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'amount' ) ),
 				'orderSource' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'orderSource' ) ),
-				'card' => Checker::requiredField ( XmlFields::cardType ( XmlFields::returnArrayValue ( $hash_in, 'card' ) ) ) 
+				'card' => Checker::requiredField ( XmlFields::cardType ( XmlFields::returnArrayValue ( $hash_in, 'card' ) ) )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createUnloadHash($hash_in) {
@@ -442,27 +442,27 @@ class Transactions {
 				'orderId' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'orderId' ) ),
 				'amount' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'amount' ) ),
 				'orderSource' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'orderSource' ) ),
-				'card' => Checker::requiredField ( XmlFields::cardType ( XmlFields::returnArrayValue ( $hash_in, 'card' ) ) ) 
+				'card' => Checker::requiredField ( XmlFields::cardType ( XmlFields::returnArrayValue ( $hash_in, 'card' ) ) )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createBalanceInquiryHash($hash_in) {
 		$hash_out = array (
 				'orderId' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'orderId' ) ),
 				'orderSource' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'orderSource' ) ),
-				'card' => Checker::requiredField ( XmlFields::cardType ( XmlFields::returnArrayValue ( $hash_in, 'card' ) ) ) 
+				'card' => Checker::requiredField ( XmlFields::cardType ( XmlFields::returnArrayValue ( $hash_in, 'card' ) ) )
 		);
-		
+
 		return $hash_out;
 	}
 	public static function createAccountUpdate($hash_in) {
 		$hash_out = array (
 				'orderId' => Checker::requiredField ( XmlFields::returnArrayValue ( $hash_in, 'orderId' ) ),
 				'card' => XmlFields::cardType ( XmlFields::returnArrayValue ( $hash_in, 'card' ) ),
-				'token' => XmlFields::cardTokenType ( XmlFields::returnArrayValue ( $hash_in, 'token' ) ) 
+				'token' => XmlFields::cardTokenType ( XmlFields::returnArrayValue ( $hash_in, 'token' ) )
 		);
-		
+
 		return $hash_out;
 	}
 }
