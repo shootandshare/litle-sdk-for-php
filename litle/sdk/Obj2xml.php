@@ -102,9 +102,9 @@ class Obj2xml
         return str_replace("<?xml version=\"1.0\"?>\n", "", $rfr->asXML());
     }
 
-    public static function generateBatchHeader($counts_and_amounts)
+    public static function generateBatchHeader($counts_and_amounts, $config = array())
     {
-        $config= Obj2xml::getConfig(array());
+        $config= Obj2xml::getConfig($config);
 
         $xml = simplexml_load_string("<batchRequest />");
         $xml->addAttribute('merchantId', $config['merchantId']);
@@ -163,10 +163,10 @@ class Obj2xml
         $xml->addAttribute('numBalanceInquirys', $counts_and_amounts['balanceInquiry']['count']);
 
         $xml->addAttribute('numAccountUpdates', $counts_and_amounts['accountUpdate']['count']);
-        
+
         $xml->addAttribute('numEcheckPreNoteSale', $counts_and_amounts['echeckPreNoteSale']['count']);
         $xml->addAttribute('numEcheckPreNoteCredit', $counts_and_amounts['echeckPreNoteCredit']['count']);
-        
+
         $xml->addAttribute('submerchantCreditAmount', $counts_and_amounts['submerchantCredit']['amount']);
         $xml->addAttribute('numSubmerchantCredit', $counts_and_amounts['submerchantCredit']['count']);
         $xml->addAttribute('payFacCreditAmount', $counts_and_amounts['payFacCredit']['amount']);
